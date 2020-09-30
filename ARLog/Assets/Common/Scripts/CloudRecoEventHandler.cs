@@ -35,6 +35,11 @@ public class CloudRecoEventHandler : MonoBehaviour
     public UnityEngine.UI.Image m_CloudIdleIcon;
     #endregion // PUBLIC_MEMBERS
 
+    //탐색된 target에 대한 이름을 불러오기위한 variable
+    public static string targetname;
+
+    private string cur_recog_targetid;
+
 
     #region MONOBEHAVIOUR_METHODS
     /// <summary>
@@ -42,6 +47,8 @@ public class CloudRecoEventHandler : MonoBehaviour
     /// </summary>
     void Start()
     {
+        targetname = "탐색된 타겟이 없습니다";
+
         // Register this event handler at the CloudRecoBehaviour
         m_CloudRecoBehaviour = GetComponent<CloudRecoBehaviour>();
         if (m_CloudRecoBehaviour)
@@ -59,6 +66,19 @@ public class CloudRecoEventHandler : MonoBehaviour
 
     void Update()
     {
+        m_CloudRecoBehaviour.CloudRecoEnabled = true;
+        m_TargetFinder.ClearTrackables(true);
+        m_CloudRecoBehaviour = GetComponent<CloudRecoBehaviour>();
+        if (m_CloudRecoBehaviour)
+        {
+            //m_CloudRecoBehaviour.RegisterOnInitializedEventHandler(OnInitialized);
+            m_CloudRecoBehaviour.RegisterOnNewSearchResultEventHandler(OnNewSearchResult);
+            m_CloudRecoBehaviour.RegisterOnStateChangedEventHandler(OnStateChanged);
+
+        }
+
+
+        /*
         if (m_CloudRecoBehaviour.CloudRecoInitialized && m_TargetFinder != null)
         {
             SetCloudActivityIconVisible(m_TargetFinder.IsRequesting());
@@ -68,6 +88,7 @@ public class CloudRecoEventHandler : MonoBehaviour
         {
             m_CloudIdleIcon.color = m_CloudRecoBehaviour.CloudRecoEnabled ? Color.white : Color.gray;
         }
+        */
     }
     #endregion // MONOBEHAVIOUR_METHODS
 
@@ -124,13 +145,17 @@ public class CloudRecoEventHandler : MonoBehaviour
         {
             Debug.Log("Target metadata not available.");
         }
-        else
+        else if (cur_recog_targetid!=cloudRecoResult.UniqueTargetId)
         {
             Debug.Log("MetaData: " + cloudRecoResult.MetaData);
             Debug.Log("TargetName: " + cloudRecoResult.TargetName);
             Debug.Log("Pointer: " + cloudRecoResult.TargetSearchResultPtr);
             Debug.Log("TrackingRating: " + cloudRecoResult.TrackingRating);
             Debug.Log("UniqueTargetId: " + cloudRecoResult.UniqueTargetId);
+
+            //탐색된 target에 대한 이름을 할당
+            targetname = cloudRecoResult.TargetName;
+            cur_recog_targetid = cloudRecoResult.UniqueTargetId;
         }
 
         // Changing CloudRecoBehaviour.CloudRecoEnabled to false will call TargetFinder.Stop()
