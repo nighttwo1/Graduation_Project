@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CubeColorHandler
     - textscript
     CommonScripts.dll:
     - CameraSettings
@@ -35,8 +36,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
-    Vuforia.UnityExtensions.Editor.dll:
-    - Vuforia.EditorClasses.VuforiaConfigurationEditor
     Vuforia.UnityExtensions.dll:
     - Vuforia.CloudRecoBehaviour
     - Vuforia.ImageTargetBehaviour
@@ -129,7 +128,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13858}
     - Class: 114
-      Script: {instanceID: 16868}
+      Script: {instanceID: 13860}
+    - Class: 114
+      Script: {instanceID: 15688}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1813,6 +1814,12 @@ ScriptsOnlyBuild:
     className: FrameRateSettings
   - hash:
       serializedVersion: 2
+      Hash: 16d2e3167e2505097e5f34c5814390d3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: textscript
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -2077,10 +2084,10 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 16d2e3167e2505097e5f34c5814390d3
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: textscript
+    className: CubeColorHandler
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

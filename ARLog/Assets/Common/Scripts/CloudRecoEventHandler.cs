@@ -40,7 +40,6 @@ public class CloudRecoEventHandler : MonoBehaviour
 
     private string cur_recog_targetid;
 
-
     #region MONOBEHAVIOUR_METHODS
     /// <summary>
     /// Register for events at the CloudRecoBehaviour
@@ -66,19 +65,7 @@ public class CloudRecoEventHandler : MonoBehaviour
 
     void Update()
     {
-        m_CloudRecoBehaviour.CloudRecoEnabled = true;
-        m_TargetFinder.ClearTrackables(true);
-        m_CloudRecoBehaviour = GetComponent<CloudRecoBehaviour>();
-        if (m_CloudRecoBehaviour)
-        {
-            //m_CloudRecoBehaviour.RegisterOnInitializedEventHandler(OnInitialized);
-            m_CloudRecoBehaviour.RegisterOnNewSearchResultEventHandler(OnNewSearchResult);
-            m_CloudRecoBehaviour.RegisterOnStateChangedEventHandler(OnStateChanged);
-
-        }
-
-
-        /*
+        
         if (m_CloudRecoBehaviour.CloudRecoInitialized && m_TargetFinder != null)
         {
             SetCloudActivityIconVisible(m_TargetFinder.IsRequesting());
@@ -88,7 +75,7 @@ public class CloudRecoEventHandler : MonoBehaviour
         {
             m_CloudIdleIcon.color = m_CloudRecoBehaviour.CloudRecoEnabled ? Color.white : Color.gray;
         }
-        */
+        
     }
     #endregion // MONOBEHAVIOUR_METHODS
 
@@ -145,7 +132,7 @@ public class CloudRecoEventHandler : MonoBehaviour
         {
             Debug.Log("Target metadata not available.");
         }
-        else if (cur_recog_targetid!=cloudRecoResult.UniqueTargetId)
+        else
         {
             Debug.Log("MetaData: " + cloudRecoResult.MetaData);
             Debug.Log("TargetName: " + cloudRecoResult.TargetName);
@@ -155,7 +142,7 @@ public class CloudRecoEventHandler : MonoBehaviour
 
             //탐색된 target에 대한 이름을 할당
             targetname = cloudRecoResult.TargetName;
-            cur_recog_targetid = cloudRecoResult.UniqueTargetId;
+            //cur_recog_targetid = cloudRecoResult.UniqueTargetId;
         }
 
         // Changing CloudRecoBehaviour.CloudRecoEnabled to false will call TargetFinder.Stop()
@@ -182,4 +169,32 @@ public class CloudRecoEventHandler : MonoBehaviour
         m_CloudActivityIcon.enabled = visible;
     }
     #endregion // PRIVATE_METHODS
+
+
+    public void OnClickBtn()
+    {
+
+        //m_CloudActivityIcon.enabled = true;
+        m_CloudRecoBehaviour.CloudRecoEnabled = true;
+        //m_TargetFinder.ClearTrackables(true);
+        /*
+        // Register this event handler at the CloudRecoBehaviour
+        
+        m_CloudRecoBehaviour = GetComponent<CloudRecoBehaviour>();
+        if (m_CloudRecoBehaviour)
+        {
+            m_CloudRecoBehaviour.RegisterOnInitializedEventHandler(OnInitialized);
+            m_CloudRecoBehaviour.RegisterOnNewSearchResultEventHandler(OnNewSearchResult);
+            m_CloudRecoBehaviour.RegisterOnStateChangedEventHandler(OnStateChanged);
+        }
+
+        if (m_CloudActivityIcon)
+        {
+            m_CloudActivityIcon.enabled = false;
+        }
+
+
+        //m_ImageTargetBehaviour.gameObject.SendMessage("OnReset", SendMessageOptions.DontRequireReceiver);
+        */
+    }
 }

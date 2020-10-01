@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\NewScripts\CubeColorHandler.cs" />
     <Compile Include="Assets\NewScripts\textscript.cs" />
     <Compile Include="Assets\SamplesResources\AugmentationAssets\Scripts\Augmentations\Astronaut.cs" />
     <Compile Include="Assets\SamplesResources\AugmentationAssets\Scripts\Augmentations\Augmentation.cs" />
