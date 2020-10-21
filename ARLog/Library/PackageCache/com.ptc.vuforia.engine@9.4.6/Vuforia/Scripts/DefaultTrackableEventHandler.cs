@@ -161,7 +161,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour
             var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
             var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
             var canvasComponents = mTrackableBehaviour.GetComponentsInChildren<Canvas>(true);
-            
+
             // Disable rendering:
             foreach (var component in rendererComponents)
                 component.enabled = false;
@@ -173,7 +173,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour
             // Disable canvas':
             foreach (var component in canvasComponents)
                 component.enabled = false;
-            
         }
 
         if (OnTargetLost != null)

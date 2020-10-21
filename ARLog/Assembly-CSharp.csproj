@@ -64,6 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\NewScripts\CubeColorHandler.cs" />
+    <Compile Include="Assets\NewScripts\SwipeHandler.cs" />
+    <Compile Include="Assets\NewScripts\SwipeTrail.cs" />
     <Compile Include="Assets\NewScripts\textscript.cs" />
     <Compile Include="Assets\SamplesResources\AugmentationAssets\Scripts\Augmentations\Astronaut.cs" />
     <Compile Include="Assets\SamplesResources\AugmentationAssets\Scripts\Augmentations\Augmentation.cs" />
