@@ -6,6 +6,7 @@ Copyright (c) 2012-2015 Qualcomm Connected Experiences, Inc. All Rights Reserved
 Vuforia is a trademark of PTC Inc., registered in the United States and other 
 countries.
 ==============================================================================*/
+using System;
 using UnityEngine;
 using Vuforia;
 
@@ -39,6 +40,8 @@ public class CloudRecoEventHandler : MonoBehaviour
     public static string targetname;
 
     private string cur_recog_targetid;
+
+    public static Boolean IsTargetRecognized = false;
 
     #region MONOBEHAVIOUR_METHODS
     /// <summary>
@@ -157,6 +160,10 @@ public class CloudRecoEventHandler : MonoBehaviour
 
         // Pass the TargetSearchResult to the Trackable Event Handler for processing
         m_ImageTargetBehaviour.gameObject.SendMessage("TargetCreated", cloudRecoResult, SendMessageOptions.DontRequireReceiver);
+        
+        IsTargetRecognized = true;
+        //DrawPanelController.panel_draw.SetActive(true);
+
     }
     #endregion // INTERFACE_IMPLEMENTATION_ICloudRecoEventHandler
 

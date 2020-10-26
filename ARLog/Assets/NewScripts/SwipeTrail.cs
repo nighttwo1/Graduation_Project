@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SwipeTrail : MonoBehaviour
 {
+    public static GameObject swipmanager;
+
     public GameObject trailPrefab;
     GameObject thisTrail;
     Vector3 startPos;
@@ -12,7 +14,7 @@ public class SwipeTrail : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        swipmanager = GameObject.Find("SwipeManager");
     }
 
     // Update is called once per frame

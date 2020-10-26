@@ -1,7 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ButtonTest2
     - CubeColorHandler
+    - PanelController
     - SwipeTrail
     - textscript
     CommonScripts.dll:
@@ -136,6 +138,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13864}
     - Class: 114
       Script: {instanceID: 13902}
+    - Class: 114
+      Script: {instanceID: 24162}
+    - Class: 114
+      Script: {instanceID: 30806}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2105,6 +2111,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DrawPanelController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PanelController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonTest2
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

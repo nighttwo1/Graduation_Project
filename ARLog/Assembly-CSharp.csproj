@@ -63,7 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\NewScripts\ButtonTest2.cs" />
     <Compile Include="Assets\NewScripts\CubeColorHandler.cs" />
+    <Compile Include="Assets\NewScripts\DrawPanelController.cs" />
+    <Compile Include="Assets\NewScripts\PanelController.cs" />
     <Compile Include="Assets\NewScripts\SwipeHandler.cs" />
     <Compile Include="Assets\NewScripts\SwipeTrail.cs" />
     <Compile Include="Assets\NewScripts\textscript.cs" />

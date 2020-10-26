@@ -17,5 +17,6 @@ public class textscript : MonoBehaviour
     void Update()
     {
         ScriptTxt.text = CloudRecoEventHandler.targetname;
+        //ScriptTxt.text = ButtonTest2.button_count + "";
     }
 }

@@ -622,11 +622,11 @@
     <Reference Include="VuforiaScripts">
       <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
