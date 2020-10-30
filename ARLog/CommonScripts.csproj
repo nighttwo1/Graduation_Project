@@ -265,6 +265,36 @@
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="Firebase.Analytics">
+      <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/PackageCache/com.google.firebase.analytics@6.16.1/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.App">
+      <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/PackageCache/com.google.firebase.app@6.16.1/Firebase/Plugins/Firebase.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Platform">
+      <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/PackageCache/com.google.firebase.app@6.16.1/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.TaskExtension">
+      <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/PackageCache/com.google.firebase.app@6.16.1/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.MiniJson">
+      <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/PackageCache/com.google.firebase.app@6.16.1/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Compat">
+      <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/PackageCache/com.google.firebase.app@6.16.1/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Tasks">
+      <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/PackageCache/com.google.firebase.app@6.16.1/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Auth">
+      <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/PackageCache/com.google.firebase.auth@6.16.1/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Database">
+      <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/PackageCache/com.google.firebase.database@6.16.1/Firebase/Plugins/Firebase.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.RemoteConfig">
+      <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/PackageCache/com.google.firebase.remote-config@6.16.1/Firebase/Plugins/Firebase.RemoteConfig.dll</HintPath>
+    </Reference>
     <Reference Include="Vuforia.UnityExtensions">
       <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/PackageCache/com.ptc.vuforia.engine@9.4.6/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
@@ -628,11 +658,11 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Users/user0/Graduation_Project/ARLog/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

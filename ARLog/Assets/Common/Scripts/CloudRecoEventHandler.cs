@@ -39,9 +39,13 @@ public class CloudRecoEventHandler : MonoBehaviour
     //탐색된 target에 대한 이름을 불러오기위한 variable
     public static string targetname;
 
+    public static string target_id;
+
     private string cur_recog_targetid;
 
     public static Boolean IsTargetRecognized = false;
+
+    public static Boolean first = true;
 
     #region MONOBEHAVIOUR_METHODS
     /// <summary>
@@ -145,6 +149,8 @@ public class CloudRecoEventHandler : MonoBehaviour
 
             //탐색된 target에 대한 이름을 할당
             targetname = cloudRecoResult.TargetName;
+
+            target_id = cloudRecoResult.UniqueTargetId;
             //cur_recog_targetid = cloudRecoResult.UniqueTargetId;
         }
 
@@ -183,6 +189,8 @@ public class CloudRecoEventHandler : MonoBehaviour
 
         //m_CloudActivityIcon.enabled = true;
         m_CloudRecoBehaviour.CloudRecoEnabled = true;
+
+        first = true;
         //m_TargetFinder.ClearTrackables(true);
         /*
         // Register this event handler at the CloudRecoBehaviour

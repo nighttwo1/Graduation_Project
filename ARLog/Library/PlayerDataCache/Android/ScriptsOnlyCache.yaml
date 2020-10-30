@@ -1,9 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - ButtonTest2
-    - CubeColorHandler
+    - DrawingButtonHandler
+    - DrawingButtonScript
     - PanelController
+    - RecogButtonScript
+    - SaveButtonHandler
+    - SaveButtonScript
     - SwipeTrail
     - textscript
     CommonScripts.dll:
@@ -70,8 +73,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 96
@@ -81,74 +82,84 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11356}
+      Script: {instanceID: 11560}
     - Class: 114
-      Script: {instanceID: 11358}
+      Script: {instanceID: 11562}
     - Class: 114
-      Script: {instanceID: 11554}
+      Script: {instanceID: 11790}
     - Class: 114
-      Script: {instanceID: 11598}
+      Script: {instanceID: 11840}
     - Class: 114
-      Script: {instanceID: 11710}
+      Script: {instanceID: 11904}
     - Class: 114
-      Script: {instanceID: 11728}
+      Script: {instanceID: 11934}
     - Class: 114
-      Script: {instanceID: 11836}
+      Script: {instanceID: 11962}
     - Class: 114
-      Script: {instanceID: 11860}
+      Script: {instanceID: 11988}
     - Class: 114
-      Script: {instanceID: 11886}
+      Script: {instanceID: 12110}
     - Class: 114
-      Script: {instanceID: 11894}
+      Script: {instanceID: 12134}
     - Class: 114
-      Script: {instanceID: 11998}
+      Script: {instanceID: 12160}
     - Class: 114
-      Script: {instanceID: 12064}
+      Script: {instanceID: 12168}
     - Class: 114
-      Script: {instanceID: 12120}
+      Script: {instanceID: 12284}
     - Class: 114
-      Script: {instanceID: 12154}
+      Script: {instanceID: 12352}
     - Class: 114
-      Script: {instanceID: 12310}
+      Script: {instanceID: 12410}
     - Class: 114
-      Script: {instanceID: 12324}
+      Script: {instanceID: 12444}
     - Class: 114
-      Script: {instanceID: 12912}
+      Script: {instanceID: 12604}
     - Class: 114
-      Script: {instanceID: 12986}
+      Script: {instanceID: 12618}
     - Class: 114
-      Script: {instanceID: 13036}
+      Script: {instanceID: 13186}
     - Class: 114
-      Script: {instanceID: 13068}
+      Script: {instanceID: 13222}
     - Class: 114
-      Script: {instanceID: 13072}
+      Script: {instanceID: 13260}
     - Class: 114
-      Script: {instanceID: 13088}
+      Script: {instanceID: 13292}
     - Class: 114
-      Script: {instanceID: 13346}
+      Script: {instanceID: 13336}
     - Class: 114
-      Script: {instanceID: 13374}
+      Script: {instanceID: 13390}
     - Class: 114
-      Script: {instanceID: 13540}
+      Script: {instanceID: 13430}
     - Class: 114
-      Script: {instanceID: 13818}
+      Script: {instanceID: 13434}
     - Class: 114
-      Script: {instanceID: 13862}
+      Script: {instanceID: 13450}
     - Class: 114
-      Script: {instanceID: 13864}
+      Script: {instanceID: 13622}
     - Class: 114
-      Script: {instanceID: 13902}
+      Script: {instanceID: 13722}
     - Class: 114
-      Script: {instanceID: 24162}
+      Script: {instanceID: 13752}
     - Class: 114
-      Script: {instanceID: 30806}
+      Script: {instanceID: 13952}
+    - Class: 114
+      Script: {instanceID: 14256}
+    - Class: 114
+      Script: {instanceID: 14300}
+    - Class: 114
+      Script: {instanceID: 14302}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -248,6 +259,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UploadDataScript
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: PositionAsUV1
@@ -295,10 +312,22 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SaveButtonHandler
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DrawingButtonHandler
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -323,6 +352,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Firebase.Platform.dll
+    namespaceName: Firebase.Platform
+    className: FirebaseMonoBehaviour
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -1297,6 +1332,18 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 000cc05e3941ca23c0b57f21968be1b7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PanelController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SaveButtonScript
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1313,6 +1360,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DrawingButtonScript
   - hash:
       serializedVersion: 2
       Hash: 3a1df3e7e6ee8a41192e4b7e916d2223
@@ -1427,6 +1480,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AstronautStateMachineBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RecogButtonScript
   - hash:
       serializedVersion: 2
       Hash: 24c74cc0d527a06113f2b967042769f0
@@ -1861,6 +1920,12 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DrawPanelController
+  - hash:
+      serializedVersion: 2
       Hash: 7072231382eb3c4871b3dd75ad0227e1
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -2116,20 +2181,8 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: DrawPanelController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PanelController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ButtonTest2
+    className: LineRendering
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/user0/ARLog/arlog.apk
+  playerPath: C:/Users/user0/Desktop/ARLog_android_exported2

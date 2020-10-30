@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class CubeColorHandler : MonoBehaviour
 {
+    public static GameObject cube;
     // Start is called before the first frame update
     void Start()
     {
+        cube = GameObject.Find("Cube");
         GetComponent< Renderer >().material.color = Color.red;
     }
 
