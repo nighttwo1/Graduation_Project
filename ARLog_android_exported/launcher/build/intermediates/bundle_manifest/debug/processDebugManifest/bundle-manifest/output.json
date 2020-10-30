@@ -1,0 +1,1 @@
+[{"outputType":{"type":"BUNDLE_MANIFEST"},"apkData":{"type":"MAIN","splits":[],"versionCode":94,"versionName":"9.4","enabled":true,"outputFile":"launcher-debug.apk","fullName":"debug","baseName":"debug"},"path":"AndroidManifest.xml","properties":{"packageId":"com.vuforia.engine.CoreSamplesUnity","split":"","minSdkVersion":"19"}}]

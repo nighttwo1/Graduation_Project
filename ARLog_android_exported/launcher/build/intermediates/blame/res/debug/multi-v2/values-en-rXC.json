@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\user0\\Desktop\\ARLog_android_exported\\launcher\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rXC\\values-en-rXC.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\user0\\.gradle\\caches\\transforms-2\\files-2.1\\cbd3e1d4105a27948818428fa598bd8f\\res\\values-en-rXC\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "194,344,498,702,906",
+                        "endColumns": "149,153,203,203,164",
+                        "endOffsets": "343,497,701,905,1070"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,209,367,575,783",
+                        "endColumns": "153,157,207,207,168",
+                        "endOffsets": "204,362,570,778,947"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\user0\\.gradle\\caches\\transforms-2\\files-2.1\\547f05708108d54d1e83d296c6fbba79\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "203",
+                        "endOffsets": "254"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "952",
+                        "endColumns": "203",
+                        "endOffsets": "1151"
+                    }
+                }
+            ]
+        }
+    ]
+}

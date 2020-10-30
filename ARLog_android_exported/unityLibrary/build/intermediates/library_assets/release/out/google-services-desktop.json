@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "756299116046",
+    "firebase_url": "https://arlog-2c813.firebaseio.com",
+    "project_id": "arlog-2c813",
+    "storage_bucket": "arlog-2c813.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756299116046:android:a55f71369e4be19618d65f",
+        "android_client_info": {
+          "package_name": "com.vuforia.engine.CoreSamplesUnity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756299116046-q3pfsp55bfdrtlp0mbjr2flrrah91vs6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_yWYJhr1-To_JfcrQhtByaYyrJh0f8HU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "756299116046-q3pfsp55bfdrtlp0mbjr2flrrah91vs6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

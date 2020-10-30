@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ARLog_android_exported.iml" filepath="$PROJECT_DIR$/.idea/modules/ARLog_android_exported.iml" group="ARLog_android_exported" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/unityLibrary/FirebaseApp.androidlib/FirebaseApp.androidlib.iml" filepath="$PROJECT_DIR$/.idea/modules/unityLibrary/FirebaseApp.androidlib/FirebaseApp.androidlib.iml" group="ARLog_android_exported/unityLibrary/FirebaseApp.androidlib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/launcher/launcher.iml" filepath="$PROJECT_DIR$/.idea/modules/launcher/launcher.iml" group="ARLog_android_exported/launcher" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/unityLibrary/unityLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/unityLibrary/unityLibrary.iml" group="ARLog_android_exported/unityLibrary" />
+    </modules>
+  </component>
+</project>
